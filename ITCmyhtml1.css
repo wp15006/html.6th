@@ -2,7 +2,7 @@ body{
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
 	background-color: #cfc;
 	margin: 0;
-	background-image: url(top-package.png);
+	/*background-image: url(top-package.png);*/
 }
 
 #container{
@@ -12,10 +12,7 @@ body{
 	width: 900px;
 	height: auto;
 	box-shadow: 0 0 30px #fff;/*, 0 0 40px #5f8 inset*/
-}
-
-#container p{
-	display: block;
+	position: relative;
 }
 
 #pageheader{
@@ -24,6 +21,10 @@ body{
 	background-repeat: no-repeat;
 	width: 900px;
 	height: 400px;
+}
+
+#pageheader a{
+	text-decoration: none;
 }
 
 #pageheader h1{
@@ -79,54 +80,111 @@ article{
 article{
 	width: 900px;
 }
+article header#postheader{
+	width: 700px;
+	margin: 30px auto 0;
+}
 
-article header h1{
+article header#postheader h1{
 	font-size: 20px;
 	font-weight: normal;
 	float: left;
-	padding: 50px;
-	/*border: 1px solid #fff;
-	border-radius: 200px;
-	box-shadow: 0 0 40px #fff inset;*/
-	margin-right: 30px;
-	margin-left: 70px;
-	/*background-color: #cfc;*/
+	width: 350px;
+	margin-top: 25px;
 }
 
-article header p{
+article header#postheader>p{
 	font-size: 14px;
 }
 
-article div{
-	margin: 0 150px;
+/*インデックスのコンテンツ*/
+
+article img#gs{
+	float: right;
+	position: absolute;
+	right: 20px;
+	bottom: 50px;
 }
 
-article section h1{
+article section.index{
+	padding-bottom: 10px;
 	clear: left;
-	background-image: url(blue.jpg);
 }
 
-article section img{
+article section.index h1{
+	background-image: url(blue.jpg);
+	height: 40px;
+}
+
+article section.index h1 p{
+	font-size: 20px;
+	padding: 7px 0 0 100px;
+}
+
+article section.index img.icon{
 	float: left;
 	padding-bottom: 30px;
+	margin-left: 70px;
 }
 
-article section img:first-child{
-	margin-bottom: 40px;
+article section.index p{
+	font-size: 12px;
+	width: 650px;
 }
 
-article section p{
+.triangle{
+	margin: 50px auto 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid #ada;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+
+/*コンテンツページのコンテンツ*/
+/*今のところ全エラー？効いてないみたい*/
+.contnets{
+	width: 600px;
+	margin: 0 auto;
+	padding-left: 500px;
+}
+
+.contents h1{
+	background-image: url(blue.jpg);
+	height: 40px;
+}
+
+.contents h1 p{
+	font-size: 20px;
+	padding: 7px 0 0 100px;
+}
+
+.contents img{
+	float: left;
+	width: 400px;
+	margin: 0 30px 20px 70px;
+}
+
+.contents>p{
+	clear: left;
 	font-size: 12px;
 }
+
 
 /*フッター*/
 
 footer{
 	clear: left;
 	text-align: center;
-	border-top: solid 1px #000;
+	border-top: solid 1px #aaa;
 }
 
 footer small{
-	color: #000;
+	color: #aaa;
 }
+
+
+
