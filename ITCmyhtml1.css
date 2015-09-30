@@ -9,9 +9,9 @@ body{
 	margin: 0 auto;
 	padding: 0 30px;
 	background-color: #fff;
+	box-shadow: 0 0 30px #fff;
 	width: 900px;
 	height: auto;
-	box-shadow: 0 0 30px #fff;
 	position: relative;
 }
 
@@ -78,9 +78,10 @@ nav ul li a span{
 /*コンテンツ*/
 
 article{
-	width: 900px;
+	width: auto;
 	clear: both;
 }
+
 article header#postheader{
 	width: 700px;
 	margin: 30px auto 0;
@@ -142,13 +143,12 @@ article section.index img.icon{
 article section.index p{
 	font-size: 12px;
 	width: 650px;
+	margin-bottom: 3px;
 }
 
-}
 
 
 /*コンテンツページのコンテンツ*/
-/*今のところ全エラー？効いてないみたい*/
 
 .contnets{
 	width: 600px;
@@ -170,19 +170,75 @@ article section.index p{
 .contents img.photo-odd{
 	float: left;
 	width: 400px;
-	margin: 0 30px 20px 70px;
+	margin: 0 30px 40px 70px;
 	border-radius: 300px;
 }
 
 .contents img.photo-even{
 	float: right;
 	width: 400px;
-	margin: 0 20px 30px 70px;
+	margin: 0 20px 40px 50px;
 	border-radius: 300px;
 }
 
 .contents>p{
 	font-size: 12px;
+	margin: 0 50px 30px 30px;
+}
+
+
+
+
+
+
+label {
+    background: green;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    display: block;
+    margin-left: 500px;
+}
+
+input[type="checkbox"].on-off{
+    display: none;
+}
+
+.menu div {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    padding: 5px;
+    font-size: 12px;
+}
+
+input[type="checkbox"].on-off + div{
+    height: 0;
+    overflow: hidden;
+}
+
+input[type="checkbox"].on-off:checked + div{
+    height: 400px;
+}
+
+.triangle2{
+	margin-top: 7px;
+	float: right;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #ada;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
 }
 
 
