@@ -11,7 +11,7 @@ body{
 	background-color: #fff;
 	width: 900px;
 	height: auto;
-	box-shadow: 0 0 30px #fff;/*, 0 0 40px #5f8 inset*/
+	box-shadow: 0 0 30px #fff;
 	position: relative;
 }
 
@@ -70,8 +70,8 @@ nav ul li a{
 	color: #000;
 }
 
-article{
-	clear: both;
+nav ul li a span{
+	color: #fff;
 }
 
 
@@ -79,6 +79,7 @@ article{
 
 article{
 	width: 900px;
+	clear: both;
 }
 article header#postheader{
 	width: 700px;
@@ -95,6 +96,17 @@ article header#postheader h1{
 
 article header#postheader>p{
 	font-size: 14px;
+}
+
+.triangle{
+	margin: 50px auto 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid #ada;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid transparent;
 }
 
 /*インデックスのコンテンツ*/
@@ -132,20 +144,12 @@ article section.index p{
 	width: 650px;
 }
 
-.triangle{
-	margin: 50px auto 0;
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 50px solid #ada;
-    border-right: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    border-left: 50px solid transparent;
 }
 
 
 /*コンテンツページのコンテンツ*/
 /*今のところ全エラー？効いてないみたい*/
+
 .contnets{
 	width: 600px;
 	margin: 0 auto;
@@ -155,6 +159,7 @@ article section.index p{
 .contents h1{
 	background-image: url(blue.jpg);
 	height: 40px;
+	clear: both;
 }
 
 .contents h1 p{
@@ -162,22 +167,30 @@ article section.index p{
 	padding: 7px 0 0 100px;
 }
 
-.contents img{
+.contents img.photo-odd{
 	float: left;
 	width: 400px;
 	margin: 0 30px 20px 70px;
+	border-radius: 300px;
+}
+
+.contents img.photo-even{
+	float: right;
+	width: 400px;
+	margin: 0 20px 30px 70px;
+	border-radius: 300px;
 }
 
 .contents>p{
-	clear: left;
 	font-size: 12px;
 }
+
 
 
 /*フッター*/
 
 footer{
-	clear: left;
+	clear: both;
 	text-align: center;
 	border-top: solid 1px #aaa;
 }
