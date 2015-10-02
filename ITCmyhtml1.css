@@ -127,12 +127,10 @@ article section.index{
 article section.index h1{
 	background-image: url(blue.jpg);
 	height: 40px;
-}
-
-article section.index h1 p{
 	font-size: 20px;
 	padding: 7px 0 0 100px;
 }
+
 
 article section.index img.icon{
 	float: left;
@@ -145,7 +143,6 @@ article section.index p{
 	width: 650px;
 	margin-bottom: 3px;
 }
-
 
 
 /*コンテンツページのコンテンツ*/
@@ -162,7 +159,7 @@ article section.index p{
 	clear: both;
 }
 
-.contents h1 p{
+.contents h1{
 	font-size: 20px;
 	padding: 7px 0 0 100px;
 }
@@ -190,14 +187,22 @@ article section.index p{
 
 
 
+/*コンテンツ内レシピ*/
 
-label {
+label{
     background: green;
     color: #fff;
     padding: 10px;
     border: 1px solid #fff;
     display: block;
+}
+
+label.odd {
     margin-left: 500px;
+}
+
+label.even {
+    margin-right: 500px;
 }
 
 input[type="checkbox"].on-off{
@@ -239,6 +244,13 @@ input[type="checkbox"].on-off:checked + div{
     border-right: 8px solid transparent;
     border-bottom: 8px solid transparent;
     border-left: 8px solid transparent;
+}
+
+
+/*コンタクトページのアーティクル*/
+article form{
+	width: 600px;
+	margin-left: 200px;
 }
 
 
