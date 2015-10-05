@@ -2,7 +2,6 @@ body{
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
 	background-color: #cfc;
 	margin: 0;
-	/*background-image: url(top-package.png);*/
 }
 
 #container{
@@ -68,11 +67,16 @@ nav ul li a{
 	font-family: 'Comfortaa', cursive;
 	text-decoration: none;
 	color: #000;
+	font-size: 16px;
 }
 
 nav ul li a span{
 	color: #fff;
 }
+
+/*nav ul li:hover a , nav ul li:hover a span{
+	color: #aaffcc;
+}*/
 
 
 /*コンテンツ*/
