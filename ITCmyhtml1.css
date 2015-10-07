@@ -201,11 +201,13 @@ label{
     display: block;
 }
 
-label.odd {
+.menu .odd{
+	width: 400px;
     margin-left: 500px;
 }
 
-label.even {
+.menu .even{
+	width: 400px;
     margin-right: 500px;
 }
 
@@ -213,7 +215,11 @@ input[type="checkbox"].on-off{
     display: none;
 }
 
-.menu div {
+/*.menu{
+	width: 400px;
+}*/
+
+.menu div{
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -222,10 +228,11 @@ input[type="checkbox"].on-off{
     margin: 0;
     padding: 0;
     list-style: none;
+    width: 400px;
 }
 
 .menu li {
-    padding: 5px;
+    padding: 4px;
     font-size: 12px;
 }
 
@@ -235,7 +242,7 @@ input[type="checkbox"].on-off + div{
 }
 
 input[type="checkbox"].on-off:checked + div{
-    height: 400px;
+    height: auto;
 }
 
 .triangle2{
@@ -250,6 +257,9 @@ input[type="checkbox"].on-off:checked + div{
     border-left: 8px solid transparent;
 }
 
+.no-point{
+	list-style: none;
+}
 
 /*コンタクトページのアーティクル*/
 article form{
