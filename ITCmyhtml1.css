@@ -155,6 +155,7 @@ article section.index p{
 	width: 600px;
 	margin: 0 auto;
 	padding-left: 500px;
+/*	position: relative;*/
 }
 
 .contents h1{
@@ -187,8 +188,11 @@ article section.index p{
 	margin: 0 50px 30px 30px;
 }
 
-
-
+.contents img.gs{
+	position: absolute;
+	top:1050px;
+	left:400px;
+}
 
 
 /*コンテンツ内レシピ*/
